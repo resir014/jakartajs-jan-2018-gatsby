@@ -1,0 +1,9 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.root {
+  max-width: $grid-max-width-lg;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: $color-white;
+}

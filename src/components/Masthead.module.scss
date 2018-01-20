@@ -1,0 +1,32 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.root {
+  padding: ($grid-container-padding / 2) $grid-container-padding;
+  color: $color-grey-100;
+  z-index: 2;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mastheadIcon {
+  img {
+    max-height: 36px;
+    vertical-align: middle;
+  }
+}
+
+.mastheadNav {
+  height: 100%;
+
+  .mastheadNavLink {
+    height: 100%;
+    padding: 0 1rem;
+  }
+}
