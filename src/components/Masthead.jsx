@@ -17,7 +17,7 @@ const Masthead = ({ siteName, menuItems }) => (
             className={styles.mastheadNavLink}
             key={item.name}
             href={item.path}
-            path={item.path}
+            to={item.path}
           >
             {item.name}
           </Link>
