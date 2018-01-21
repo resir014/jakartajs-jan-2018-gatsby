@@ -16,6 +16,12 @@
 }
 
 .mastheadIcon {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   img {
     max-height: 48px;
     vertical-align: middle;
@@ -27,6 +33,24 @@
 
   .mastheadNavLink {
     height: 100%;
-    padding: 0 1rem;
+    margin: 0 1rem;
+    padding: .25rem 0;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include on-event {
+      text-decoration: none;
+      border-bottom: 3px solid $color-brand-5;
+    }
+  }
+
+  .mastheadNavLinkActive {
+    border-bottom: 3px solid $color-brand-5;
   }
 }

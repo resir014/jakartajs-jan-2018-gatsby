@@ -8,9 +8,11 @@ import { Icon } from '../assets/images';
 const Masthead = ({ siteName, menuItems }) => (
   <header className={styles.root}>
     <div className={styles.inner}>
-      <Link className={styles.mastheadIcon} href="/" to="/">
-        <img src={Icon} alt={siteName} />
-      </Link>
+      <div className={styles.mastheadIcon}>
+        <Link href="/" to="/">
+          <img src={Icon} alt={siteName} />
+        </Link>
+      </div>
       <nav className={styles.mastheadNav}>
         {menuItems.map(item => (
           <Link
@@ -18,6 +20,7 @@ const Masthead = ({ siteName, menuItems }) => (
             key={item.name}
             href={item.path}
             to={item.path}
+            activeClassName={styles.mastheadNavLinkActive}
           >
             {item.name}
           </Link>

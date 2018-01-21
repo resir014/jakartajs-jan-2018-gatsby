@@ -18,11 +18,11 @@
 
 .primary {
   color: $color-white;
-  background-color: $color-brand-1;
+  background-color: $color-brand-5;
   border: 2px solid transparent;
 
   @include on-event {
-    background-color: darken($color-brand-1, 10%);
+    background-color: darken($color-brand-5, 10%);
   }
 }
 
@@ -37,9 +37,9 @@
 }
 
 .inverted {
-  color: $color-brand-1;
+  color: $color-brand-5;
   background-color: transparent;
-  border: 2px solid $color-brand-1;
+  border: 2px solid $color-brand-5;
 
   @include on-event {
     background-color: transparentize($color-grey-900, 0.9%);
