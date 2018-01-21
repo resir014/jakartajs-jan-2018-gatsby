@@ -2,7 +2,9 @@
 @import "../styles/mixins";
 
 .root {
-  padding: 1.5rem 0 3rem;
+  padding: 1rem 0 3rem;
+  text-align: center;
+  color: $color-grey-100;
 }
 
 .inner {

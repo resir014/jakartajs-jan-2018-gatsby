@@ -1,6 +1,8 @@
-/* eslint-disable strict */
+/* eslint-disable strict,max-len */
 
 'use strict';
+
+require('dotenv').config();
 
 const cssnext = require('postcss-cssnext');
 
@@ -31,7 +33,6 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-autolink-headers',
           'gatsby-remark-smartypants',
         ],
       },

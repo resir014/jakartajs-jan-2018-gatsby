@@ -6,9 +6,18 @@ import styles from './Footer.module.scss';
 
 const Footer = ({ siteName }) => (
   <footer className={classnames(styles.root)}>
-    <p>
-      <small>&copy; {siteName} 2018</small>
-    </p>
+    <div className={styles.inner}>
+      <p>
+        <small>&copy; {siteName} 2018</small>
+      </p>
+      <p>
+        <small>
+          <a href="https://twitter.com/JakartaJS" target="_blank" rel="noopener noreferrer">
+            Follow us on Twitter
+          </a>
+        </small>
+      </p>
+    </div>
   </footer>
 );
 

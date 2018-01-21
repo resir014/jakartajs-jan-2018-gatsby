@@ -46,3 +46,23 @@
     margin-top: 0;
   }
 }
+
+.eventCard {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: $color-grey-200;
+  border-radius: 5px;
+
+  &:first-of-type {
+    margin-top: 1rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.eventCardHeading {
+  margin-top: 0;
+}
