@@ -4,6 +4,7 @@
 .main {
   flex: 1;
   padding: 1rem;
+  padding-bottom: 5rem;
 }
 
 .mainHeader {
@@ -36,4 +37,12 @@
 .heading {
   color: $color-grey-100;
   text-align: center;
+}
+
+.titleCard {
+  text-align: center;
+
+  .subtitle {
+    margin-top: 0;
+  }
 }

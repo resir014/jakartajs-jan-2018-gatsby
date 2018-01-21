@@ -8,6 +8,7 @@ import '../styles/globals.scss';
 import styles from './index.module.scss';
 
 import Masthead from '../components/Masthead';
+import Footer from '../components/Footer';
 
 const menuItems = [
   {
@@ -30,6 +31,7 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <Masthead siteName={data.site.siteMetadata.title} menuItems={menuItems} />
     {children()}
+    <Footer siteName={data.site.siteMetadata.title} />
   </div>
 );
 

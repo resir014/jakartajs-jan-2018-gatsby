@@ -1,11 +1,12 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Link from 'gatsby-link';
 
 import styles from '../pages/home.module.scss';
 import HomepageHeader from '../components/HomepageHeader';
-import PageContent from '../components/PageContent';
+import PageContainer from '../components/PageContainer';
+import MarkdownContent from '../components/MarkdownContent';
+import Card from '../components/Card';
 
 const PageTemplate = ({ data }) => {
   const { markdownRemark } = data;
@@ -16,9 +17,11 @@ const PageTemplate = ({ data }) => {
       <HomepageHeader>
         <h1 className={styles.heading}>{markdownRemark.frontmatter.title}</h1>
       </HomepageHeader>
-      <PageContent>
-        <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-      </PageContent>
+      <PageContainer>
+        <Card>
+          <MarkdownContent html={markdownRemark.html} />
+        </Card>
+      </PageContainer>
     </main>
   );
 };

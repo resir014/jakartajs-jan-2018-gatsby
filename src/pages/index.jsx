@@ -4,7 +4,8 @@ import Link from 'gatsby-link';
 
 import styles from './home.module.scss';
 import HomepageHeader from '../components/HomepageHeader';
-import PageContent from '../components/PageContent';
+import PageContainer from '../components/PageContainer';
+import Card from '../components/Card';
 
 const IndexPage = () => (
   <main className={classnames(styles.main, styles.homepageMain)}>
@@ -12,12 +13,16 @@ const IndexPage = () => (
     <HomepageHeader>
       <h1 className={styles.heading}>JakartaJS</h1>
     </HomepageHeader>
-    <PageContent>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link href="/page-2/" to="/page-2/">Go to page 2</Link>
-    </PageContent>
+    <PageContainer>
+      <Card className={styles.titleCard}>
+        <h2 className={styles.subtitle}>Jakarta JavaScript User Group</h2>
+        <p>
+          Come and meet other developers interested in JavaScript and its ecosystem in the Greater
+          Jakarta area.
+        </p>
+        <Link href="/about/" to="/about/">About Us</Link>
+      </Card>
+    </PageContainer>
   </main>
 );
 

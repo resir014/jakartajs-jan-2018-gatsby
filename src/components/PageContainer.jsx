@@ -2,16 +2,16 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import styles from './PageContent.module.scss';
+import styles from './PageContainer.module.scss';
 
-const PageContent = ({ children }) => (
+const PageContainer = ({ children }) => (
   <div className={classnames(styles.root)}>
     {children}
   </div>
 );
 
-PageContent.propTypes = {
+PageContainer.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default PageContent;
+export default PageContainer;
