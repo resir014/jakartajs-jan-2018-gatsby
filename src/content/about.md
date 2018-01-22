@@ -15,3 +15,5 @@ This site is built as part of my talk "Build Your Next Website with React, Gatsb
 ## What is Gatsby?
 
 Gatsby is a blazing-fast static site generator for React. It allows you to use the latest web technologies – React, Webpack and GraphQL – to build static pages from whichever source you prefer – from Markdown, to even legacy CMSes like WordPress.
+
+[Read more about Gatsby here.](https://www.gatsbyjs.org/)
