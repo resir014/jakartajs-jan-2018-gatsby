@@ -6,6 +6,7 @@ import HomepageHeader from '../components/HomepageHeader';
 import PageContainer from '../components/PageContainer';
 import Card from '../components/Card';
 import LinkButton from '../components/LinkButton';
+import AnchorButton from '../components/AnchorButton';
 
 const IndexPage = () => (
   <main className={classnames(styles.main, styles.homepageMain)}>
@@ -20,7 +21,8 @@ const IndexPage = () => (
           Come and meet other developers &amp; industry leaders interested in JavaScript and its ecosystem
           in the Greater Jakarta area.
         </p>
-        <LinkButton href="/about/" to="/about/">About Us</LinkButton>
+        <LinkButton kind="inverted" href="/about/" to="/about/">About Us</LinkButton>{' '}
+        <AnchorButton href="https://jakartajs-join.herokuapp.com/" newTab>Join Slack</AnchorButton>
       </Card>
     </PageContainer>
   </main>
